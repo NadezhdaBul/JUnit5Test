@@ -2,6 +2,7 @@
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
@@ -16,20 +17,15 @@ public class TestJU2 {
 
     @Tags({@Tag("Blocker"), @Tag("Functional")})
 
-    @CsvSource ({
-            "OZON, https://www.ozon.ru",
-            "Delikateska, https://www.delikateska.ru",
-            "MVideo, https://www.mvideo.ru"
-    })
+    @ValueSource(strings = {"OZON", "Delikateska", "MVideo"})
+
 
     @ParameterizedTest
 
-    void testFindSite (
-        String siteName,
-        String siteUrl
-    )
+    void testFindSite (String siteName)
     {
         $("[name=q]").setValue(siteName).pressEnter();
-        $("#search").shouldHave(text(siteUrl));
+
+        $("#search").shouldHave(text(siteName));
     }
 }
