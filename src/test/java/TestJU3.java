@@ -26,7 +26,7 @@ public class TestJU3 {
     }
 
 
-    @Tags({@Tag("Report"), @Tag("FindTV")})
+    @Tags({@Tag("report"), @Tag("FindTV")})
 
     static @NotNull Stream <Arguments> testFindTV (){
         return Stream.of(

@@ -20,6 +20,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'io.qameta.allure:allure-selenide:2.19.0'
     testImplementation 'org.slf4j:slf4j-simple:2.0.4'
+    testImplementation 'org.aeonbits.owner:owner:1.0.12'
 
 
 }
@@ -42,7 +43,8 @@ allure{
     }
 }
 
-task Report_test (type: Test) {
+
+task report_test (type: Test) {
     useJUnitPlatform{
         includeTags("hw")
     }

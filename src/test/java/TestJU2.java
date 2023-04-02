@@ -1,7 +1,6 @@
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import static com.codeborne.selenide.Condition.text;
@@ -15,7 +14,7 @@ public class TestJU2 {
 
     }
 
-    @Tags({@Tag("Report"), @Tag("Functional")})
+    @Tags({@Tag("report"), @Tag("Functional")})
 
     @ValueSource(strings = {"OZON", "Delikateska", "MVideo"})
 
