@@ -8,11 +8,11 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU5 {
+public class TestJU5 extends TestBase {
 
 
     @BeforeEach
-    void setup() {
+    void setp() {
 
         open("https://goodkitchen.su/online-menu/sbalansirovannoe-pitanie/sbalansirovannoe-pitanie-racion-2700/");
 
