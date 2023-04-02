@@ -10,7 +10,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import java.util.Map;
 
 
-public class TestBase {
+public class TestBase extends TestJU2 {
     @BeforeAll
     public static void setup() {
         SelenideLogger.addListener("allure", new AllureSelenide());
