@@ -15,7 +15,7 @@ public class TestJU2 {
 
     }
 
-    @Tags({@Tag("Blocker"), @Tag("Functional")})
+    @Tags({@Tag("Report"), @Tag("Functional")})
 
     @ValueSource(strings = {"OZON", "Delikateska", "MVideo"})
 

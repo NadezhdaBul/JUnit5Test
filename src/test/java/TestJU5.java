@@ -20,7 +20,7 @@ public class TestJU5 {
     }
 
 
-    @Tags({@Tag("Critical"), @Tag("UI")})
+    @Tags({@Tag("Report"), @Tag("UI")})
 
     @CsvSource ({
             "10, 19 250",

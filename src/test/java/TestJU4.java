@@ -19,7 +19,7 @@ public class TestJU4 {
 
     }
 
-    @Tag("FindModelPhone")
+    @Tag("Report")
     @DisplayName("Поиск телефона Huawei")
 
     @CsvSource ({
