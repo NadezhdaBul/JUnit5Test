@@ -13,11 +13,11 @@ import java.util.stream.Stream;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU3 {
+public class TestJU3 extends TestBase {
 
 
     @BeforeEach
-    void setup() {
+    void set() {
 
         open("https://www.mvideo.ru");
 

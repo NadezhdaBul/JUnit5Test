@@ -9,10 +9,10 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU4 {
+public class TestJU4 extends TestBase {
 
     @BeforeEach
-    void setup() {
+    void set() {
 
         open("https://consumer.huawei.com/ru");
         $("span[class='icon font-ico-search']").shouldBe(visible).click();

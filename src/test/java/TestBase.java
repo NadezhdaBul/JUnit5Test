@@ -12,6 +12,7 @@ import java.util.Map;
 
 public class TestBase {
 
+
     @BeforeAll
     public static void setup() {
         SelenideLogger.addListener("allure", new AllureSelenide());

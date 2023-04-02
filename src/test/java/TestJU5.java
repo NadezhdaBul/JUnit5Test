@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU5 {
+public class TestJU5 extends TestBase {
 
 
     @BeforeEach
