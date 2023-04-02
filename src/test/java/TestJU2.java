@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestJU2 extends TestBase {
 
-
     @BeforeEach
     void set() {
         open("https://www.google.com");
