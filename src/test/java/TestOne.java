@@ -8,9 +8,13 @@ public class TestOne {
     void test1(){
         Assertions.assertTrue(true);
     }
-
     @Test
     void test2(){
+        Assertions.assertTrue(true);
+    }
+
+    @Test
+    void test3(){
         Assertions.assertTrue(false);
     }
 
