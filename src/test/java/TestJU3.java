@@ -21,12 +21,9 @@ public class TestJU3 {
 
         open("https://www.mvideo.ru");
 
-        Configuration.browserSize = "1920x1080";
-
     }
 
-
-    @Tags({@Tag("report"), @Tag("FindTV")})
+    @Tag("report")
 
     static @NotNull Stream <Arguments> testFindTV (){
         return Stream.of(
