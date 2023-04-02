@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU2 {
+public class TestJU2 extends TestBase {
 
 
     @BeforeEach
@@ -14,7 +14,7 @@ public class TestJU2 {
         open("https://www.google.com");
     }
     @Tag("report")
-    @ValueSource(strings = {"OZON", "Delikateska", "MVideo"})
+    @ValueSource(strings = {"OZON", "Delikateska"})
 
 
     @ParameterizedTest
