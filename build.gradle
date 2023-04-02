@@ -46,6 +46,6 @@ allure{
 
 task report_test (type: Test) {
     useJUnitPlatform{
-        includeTags("hw")
+        includeTags("report")
     }
 }

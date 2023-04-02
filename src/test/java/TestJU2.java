@@ -8,14 +8,12 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestJU2 {
 
+
     @BeforeEach
     void setup() {
         open("https://www.google.com");
-
     }
-
-    @Tags({@Tag("report"), @Tag("Functional")})
-
+    @Tag("report")
     @ValueSource(strings = {"OZON", "Delikateska", "MVideo"})
 
 
