@@ -10,7 +10,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import java.util.Map;
 
 
-public class TestBase extends TestJU2 {
+public class TestBase {
     @BeforeAll
     public static void setup() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -19,6 +19,7 @@ public class TestBase extends TestJU2 {
 
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
+        Configuration.browserSize = "1920x1080";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
