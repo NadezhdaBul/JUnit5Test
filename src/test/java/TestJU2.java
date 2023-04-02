@@ -6,11 +6,11 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestJU2 {
+public class TestJU2 extends TestBase{
 
 
     @BeforeEach
-    void setup() {
+    void set() {
         open("https://www.google.com");
     }
     @Tag("report")

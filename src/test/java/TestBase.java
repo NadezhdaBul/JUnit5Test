@@ -11,7 +11,6 @@ import java.util.Map;
 
 
 public class TestBase {
-    TestJU2 testJU2 = new TestJU2();
 
     @BeforeAll
     public static void setup() {
