@@ -2,4 +2,9 @@ Telegram username = TestAllerts_bot
 Telegram token = 5871307357:AAE2XJ83Sw9BrqSpSA5WWTMFzF1rebjA4yE
 Chat ID = -1001872049815
 
-https://api.telegram.org/bot5871307357:AAE2XJ83Sw9BrqSpSA5WWTMFzF1rebjA4yE/getUpdates
+https://api.telegram.org/bot5871307357:AAE2XJ83Sw9BrqSpSA5WWTMFzF1rebjA4y/getUpdates
+
+curl -X POST  -H 'Content-Type: application/json' -d '{"chat_id": "-1001872049815", "text": "This is a test from Nadja", "disable_notification": true}' https://api.telegram.org/bot5871307357:AAE2XJ83Sw9BrqSpSA5WWTMFzF1rebjA4yE/sendMessage
+
+
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
